@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app.css">
+    <title>School manager</title>
+</head>
+
+<body>
+<div class="container p-md-4 content-container">
+    <div class="name-web">
+        <h4>School Manager Dashboard</h4>
+    </div>
+    <div class="row">
+        <div class="left-nav col-2">
+            <a href="#">Dashboard</a>
+            <a href="./static.html">Statistical</a>
+        </div>
+        <div id="student-block" class="col-10">
+            <div class="row">
+                <div class="col-2">
+                    <a href="./index.html" class="student">Student</a>
+                </div>
+                <div class="col-2">
+                    <a href="./teacher.html" class="teacher ">Teacher</a>
+                </div>
+                <div class="search col-8">
+                    <input class="myInput" type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>Name</p>
+                </div>
+                <div class="col-2">
+                    <p>Teacher Code</p>
+                </div>
+                <div class="col-2">
+                    <p>Age</p>
+                </div>
+                <div class="col-2">
+                    <p>Gender</p>
+                </div>
+                <div class="col-2">
+                    <p>Class Name</p>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+            <div id="teacher" class="list-teacher">
+            </div>
+            <div class="row create ">
+                <div class="col-2">
+                    <input type="text" class="create-input name" placeholder="name">
+                    <span class="mess-validate"></span>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="create-input student-code" placeholder="Teacher Code">
+                    <span class="mess-validate"></span>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="create-input age" placeholder="Age">
+                    <span class="mess-validate"></span>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="create-input gender" placeholder="Gender">
+                    <span class="mess-validate"></span>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="create-input class-name" placeholder="Class Name">
+                    <span class="mess-validate"></span>
+                </div>
+                <div class="col-2">
+                  
+                </div>
+            </div>
+            <div class="row btn-group-cr-ud">
+                <button class="create-btn ">Create</button>
+                <button class="update-btn d-none">Update</button>
+        </div>
+        </div>
+    </div>
+   
+    
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./teacher.js"></script>
+</body>
+
+</html>
